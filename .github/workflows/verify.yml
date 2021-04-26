@@ -53,10 +53,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install deps
-        run: |
-          mix deps.get
-          (cd assets && yarn)
-
+        run: mix deps.get
       - run: mix format --check-formatted
       - run: mix test
 
