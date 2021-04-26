@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        otp: [23] # Define the OTP version [required]
+        otp: [23.2] # Define the OTP version [required]
         elixir: [1.11.3] # Define the elixir version [required]
 
     services:
